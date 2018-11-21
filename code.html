@@ -1,0 +1,66 @@
+<!DOCTYPE html ><html lang="en">
+<head><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta charset="utf-8"></head>
+
+<body
+
+ <div id="bilbo"></div>
+<script>
+</script><script>
+	var getWorkPhone=localStorage.getItem("workphone");
+	var getCellPhone=localStorage.getItem("cellphone");
+	var getFirst=localStorage.getItem("first");
+	var getLast=localStorage.getItem("last");
+	var getEmail=localStorage.getItem("email");
+	var getTitle=localStorage.getItem("title");
+	var getCalendarLink=localStorage.getItem("calendarlink");
+	var getOverwatchPhone=localStorage.getItem("overwatch");
+	// Create the Style Element
+var styleElem = document.createElement('style');
+styleElem.type = 'text/css' ;
+
+var css = '.fontRed{color:red;}' ;
+if(styleElem.styleSheet){
+    styleElem.styleSheet.cssText = css;
+}
+else{
+    styleElem.appendChild(document.createTextNode(css));
+}
+
+// Append the Style element to the Head
+var head = document.getElementsByTagName('head')[0] ;
+head.appendChild(styleElem);
+var getOverwatchPhone="(720)279-2233";
+var corpName="       @CAVALRY.SOLUTIONS";
+// Append the span to the Div 
+var container = document.getElementById('bilbo');
+container.innerHTML ='<h5 style="font-family:Calibri; font-size:90%"><span style="color:lightblue;font-weight:boldl">'+getFirst+'.'+getLast+'</span><h5>'+
+'<h6 style="font-family:Calibri"><a href="https://cavalry.solutions/"><span style="font-family:Arial;color:lightgrey;font-weight:bold">'+corpName+'</span>'+'</a></h6>'
++'<h5 style="font-family:Calibri">'+getTitle+'  '+'<span style="color:red;font-weight:bold">///</span>'+'</h5>'
++'<h5 style="font-family:Calibri"><a href="tel:'+getWorkPhone+'"><span style="color:black;font-weight:normal">+1 '+getWorkPhone+' '+'-'+' O'+' '+'</span>'+'</a><h5>'
++'<h5 style="font-family:Calibri"><a href="tel:'+getCellPhone+'"><span style="font-family:Arial;color:black;font-weight:normal">+1 '+getCellPhone+' '+'-'+' C'+' '+'</span></h5>'
++'<h5 style="font-family:Calibri"><a href="tel:'+getOverwatchPhone+'"><span style="font-family:Arial;color:black;font-weight:normal">+1 '+getOverwatchPhone+' – 24X7 Overwatch'+'</span></a></h5>'
++'<h5 style="font-family:Calibri"><span style="font-family:Arial;color:red;font-weight:bold">»</span>'+'       '+'<u><a href="'+getCalendarLink+'"><span>Calendar</span></a></u></h5>'; ///this one works - as HTML output in web browser
+;
+</script>
+</form><p></p></div>
+<head>
+<style>
+
+h6{
+    margin:0;
+    padding:0;
+  font-size: 65%;
+}
+h5{
+    margin:  5px;
+    padding:0;
+	font-size: 70%;
+}
+a:link{
+  text-decoration: none!important;
+
+}
+</style></head>
+</body>
+
+</html>
